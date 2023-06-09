@@ -1,0 +1,22 @@
+[debug] [2023-06-05T13:41:17.213Z] ----------------------------------------------------------------------
+[debug] [2023-06-05T13:41:17.215Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mostl\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js apps:create android justfortest (android) --package-name=9999 --json --project=justfortest-851a1
+[debug] [2023-06-05T13:41:17.216Z] CLI Version:   12.3.0
+[debug] [2023-06-05T13:41:17.216Z] Platform:      win32
+[debug] [2023-06-05T13:41:17.217Z] Node Version:  v18.16.0
+[debug] [2023-06-05T13:41:17.217Z] Time:          Mon Jun 05 2023 21:41:17 GMT+0800 (香港標準時間)
+[debug] [2023-06-05T13:41:17.217Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-05T13:41:17.226Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-05T13:41:17.226Z] > authorizing via signed-in user (mostlofty.hk@gmail.com)
+[info] Create your ANDROID app in project justfortest-851a1:
+[debug] [2023-06-05T13:41:17.231Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/justfortest-851a1/androidApps [none]
+[debug] [2023-06-05T13:41:17.231Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/justfortest-851a1/androidApps {"displayName":"justfortest (android)","packageName":"9999"}
+[debug] [2023-06-05T13:41:17.629Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/justfortest-851a1/androidApps 400
+[debug] [2023-06-05T13:41:17.629Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/justfortest-851a1/androidApps {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2023-06-05T13:41:17.631Z] HTTP Error: 400, Request contains an invalid argument.
+[debug] [2023-06-05T13:41:17.704Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\mostl\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\mostl\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create Android app for project justfortest-851a1. See firebase-debug.log for more info.
